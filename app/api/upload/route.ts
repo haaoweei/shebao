@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { parseCitiesExcel, parseSalariesExcel } from '@/utils/excelParser';
-import { insertCities, insertSalaries, clearSalaries, clearCities } from '@/utils/database';
+import { insertCities, insertSalaries } from '@/utils/database';
 
 // 清空工资数据
 async function clearSalariesData() {
